@@ -201,7 +201,7 @@
 		<plugin> 
 			<groupId>org.apache.maven.plugins</groupId> 
 			<artifactId>maven-site-plugin</artifactId> 
-			<version>3.9.1</version> 
+			<version>3.2</version> 
 			<configuration> 
 				<reportPlugins> 
 					<plugin>
@@ -293,7 +293,12 @@
                                 <configuration>
                                     <rules>
                                         <requireMavenVersion>
-                                            <version>[3.0,)</version>
+											<plugin> 
+			<groupId>org.apache.maven.plugins</groupId> 
+			<artifactId>maven-site-plugin</artifactId> 
+			<version>3.2</version> 
+			<configuration> 
+                                            <version>[3.0]</version>
                                         </requireMavenVersion>
                                     </rules>
                                 </configuration>
