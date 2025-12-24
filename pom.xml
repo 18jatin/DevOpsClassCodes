@@ -198,21 +198,12 @@
 	
 	  
     <reporting>
-		<plugin> 
-			<groupId>org.apache.maven.plugins</groupId> 
-			<artifactId>maven-site-plugin</artifactId> 
-			<version>3.2</version> 
-			<configuration> 
-				<reportPlugins> 
-					<plugin>
-    <!--<plugins>
-      <plugin>-->
+    <plugins>
+      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-report-plugin</artifactId>
         <version>3.4.2</version>
       </plugin>
-	</reportPlugins> 
-	</configuration>
     </plugins>
   </reporting>
   
@@ -293,12 +284,7 @@
                                 <configuration>
                                     <rules>
                                         <requireMavenVersion>
-											<plugin> 
-			<groupId>org.apache.maven.plugins</groupId> 
-			<artifactId>maven-site-plugin</artifactId> 
-			<version>3.2</version> 
-			<configuration> 
-                                            <version>[3.0]</version>
+                                            <version>[3.0,)</version>
                                         </requireMavenVersion>
                                     </rules>
                                 </configuration>
@@ -308,7 +294,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-site-plugin</artifactId>
-                        <version>3.4.2</version>
+                        <version>3.3</version>
                         <configuration>
                             <reportPlugins>
                                 <plugin>
